@@ -4,16 +4,66 @@ import time
 
 # The list of commands to be run
 commands = [
-    "command1",
-    "command2",
-    "command3",
+    "nmap -sX -p 1-100 192.168.1.103",              # XMAS Flood on ports 1-100
+    "hping3 -S -c 100 -p 443 192.168.1.103",        # TCP/SYN Flood on port 443
+    "hping3 --udp -c 100 -p 53 192.168.1.103",      # UDP Flood on port 53
+    "nmap -sX -p 1-100 192.168.1.104",              # XMAS Flood on ports 1-100
+    "hping3 -S -c 100 -p 443 192.168.1.104",        # TCP/SYN Flood on port 443
+    "hping3 --udp -c 100 -p 53 192.168.1.104",      # UDP Flood on port 53
+    "nmap -sX -p 1-100 192.168.1.x",                # XMAS Flood on ports 1-100
+    "hping3 -S -c 100 -p 443 192.168.1.x",          # TCP/SYN Flood on port 443
+    "hping3 --udp -c 100 -p 53 192.168.1.x",        # UDP Flood on port 53
+    "nmap -sX -p 1-100 192.168.1.221",              # XMAS Flood on ports 1-100
+    "hping3 -S -c 100 -p 443 192.168.1.221",        # TCP/SYN Flood on port 443
+    "hping3 --udp -c 100 -p 53 192.168.1.221",      # UDP Flood on port 53
+    "nmap -sX -p 1-100 192.168.1.102",              # XMAS Flood on ports 1-100
+    "hping3 -S -c 100 -p 443 192.168.1.102",        # TCP/SYN Flood on port 443
+    "hping3 --udp -c 100 -p 53 192.168.1.102",      # UDP Flood on port 53
+    "nmap -sX -p 1-100 192.168.1.196",              # XMAS Flood on ports 1-100
+    "hping3 -S -c 100 -p 443 192.168.1.196",        # TCP/SYN Flood on port 443
+    "hping3 --udp -c 100 -p 53 192.168.1.196",      # UDP Flood on port 53
+    "nmap -sX -p 1-100 192.168.1.228",              # XMAS Flood on ports 1-100
+    "hping3 -S -c 100 -p 443 192.168.1.228",        # TCP/SYN Flood on port 443
+    "hping3 --udp -c 100 -p 443 192.168.1.228",     # UDP Flood on port 53
+    "hping3 -S -c 100 -p 80 192.168.1.103",         # HTTP Flood
+    "hping3 -S -c 100 -p 80 192.168.1.104",         # HTTP Flood
+    "hping3 -S -c 100 -p 80 192.168.1.x",           # HTTP Flood
+    "hping3 -S -c 100 -p 80 192.168.1.221",         # HTTP Flood
+    "hping3 -S -c 100 -p 80 192.168.1.102",         # HTTP Flood
+    "hping3 -S -c 100 -p 80 192.168.1.196",         # HTTP Flood
+    "hping3 -S -c 100 -p 80 192.168.1.228",         # HTTP Flood
 ]
 
 # The list of pcap file names
 fileNames = [
-    "file1.pcap",
-    "file2.pcap",
-    "file3.pcap",
+    "echoXMAS.pcap",
+    "echoTCP.pcap",
+    "echoUDP.pcap",
+    "kasaXMAS.pcap",
+    "kasaTCP.pcap",
+    "kasaUDP.pcap",
+    "LongPlusXMAS.pcap",
+    "LongPlusTCP.pcap",
+    "LongPlusUDP.pcap",
+    "RingXMAS.pcap",
+    "RingTCP.pcap",
+    "RingUDP.pcap",
+    "NestXMAS.pcap",
+    "NestTCP.pcap",
+    "NestUDP.pcap",
+    "HomeCamXMAS.pcap",
+    "HomeCamTCP.pcap",
+    "HomeCamUDP.pcap",
+    "NiteBirdXMAS.pcap",
+    "NiteBirdTCP.pcap",
+    "NiteBirdUDP.pcap",
+    "echoHTTP.pcap",
+    "kasaHTTP.pcap",
+    "LongPlusHTTP.pcap",
+    "RingHTTP.pcap",
+    "NestHTTP.pcap",
+    "HomeCamHTTP.pcap",
+    "NiteBirdHTTP.pcap",
 ]
 
 # The duration to collect packets (8 hours)
