@@ -10,9 +10,9 @@ commands = [
     "nmap -sX -p 1-100 192.168.1.104",              # XMAS Flood on ports 1-100
     "hping3 -S -c 100 -p 443 192.168.1.104",        # TCP/SYN Flood on port 443
     "hping3 --udp -c 100 -p 53 192.168.1.104",      # UDP Flood on port 53
-    "nmap -sX -p 1-100 192.168.1.x",                # XMAS Flood on ports 1-100
-    "hping3 -S -c 100 -p 443 192.168.1.x",          # TCP/SYN Flood on port 443
-    "hping3 --udp -c 100 -p 53 192.168.1.x",        # UDP Flood on port 53
+    "nmap -sX -p 1-100 192.168.1.175",              # XMAS Flood on ports 1-100
+    "hping3 -S -c 100 -p 443 192.168.1.175",        # TCP/SYN Flood on port 443
+    "hping3 --udp -c 100 -p 53 192.168.1.175",      # UDP Flood on port 53
     "nmap -sX -p 1-100 192.168.1.221",              # XMAS Flood on ports 1-100
     "hping3 -S -c 100 -p 443 192.168.1.221",        # TCP/SYN Flood on port 443
     "hping3 --udp -c 100 -p 53 192.168.1.221",      # UDP Flood on port 53
